@@ -7,6 +7,7 @@ import com.chuong.emsbackend.exception.ResourceNotFoundEx;
 import com.chuong.emsbackend.mapper.EmployeeMapper;
 import com.chuong.emsbackend.repository.EmployeeRepository;
 import com.chuong.emsbackend.service.EmployeeService;
+import jakarta.persistence.PersistenceContext;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;

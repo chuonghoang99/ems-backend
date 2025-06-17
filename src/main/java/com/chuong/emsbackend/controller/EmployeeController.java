@@ -3,6 +3,7 @@ package com.chuong.emsbackend.controller;
 import com.chuong.emsbackend.dto.EmployeeDto;
 import com.chuong.emsbackend.entity.Employee;
 import com.chuong.emsbackend.service.EmployeeService;
+import jakarta.validation.Valid;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
@@ -21,7 +22,7 @@ public class EmployeeController {
     EmployeeService employeeService;
 
     @PostMapping("/create")
-    public ResponseEntity<Employee> createEmployee(@RequestBody EmployeeDto employee) {
+    public ResponseEntity<Employee> createEmployee(@RequestBody @Valid EmployeeDto employee) {
         return new ResponseEntity<>(employeeService.createEmployee(employee),
                 HttpStatus.CREATED);
     }
