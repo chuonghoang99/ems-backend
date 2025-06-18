@@ -16,7 +16,7 @@ public class LocalResolver extends AcceptHeaderLocaleResolver implements WebMvcC
 
     private static final String ACCEPT_LANGUAGE_HEADER = "Accept-Language";
 
-    List<Locale> LOCALES = List.of(new Locale("en"), new Locale("vn"));
+    List<Locale> LOCALES = List.of(Locale.of("en"), Locale.of("vn"));
 
     @Override
     public Locale resolveLocale(HttpServletRequest request) {
