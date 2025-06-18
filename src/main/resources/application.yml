@@ -32,6 +32,13 @@ spring:
       ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
+#  messages:
+#    always-use-message-format: true
+#    basename: i18/message, validation
+#    encoding: UTF-8
+#    use-code-as-default-message: true
+#    cache-duration: 1h
+
 logging:
   level:
     org.springframework: DEBUG
